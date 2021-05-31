@@ -9,13 +9,13 @@ import { CometChat } from '@cometchat-pro/chat';
   styleUrls: ['./chat.component.css'],
 })
 export class ChatComponent implements OnInit {
-  theme: string = '';
+  user: Object = null;
 
   constructor(private auth: AngularFireAuth, private route: Router) {}
 
   ngOnInit(): void {
     CometChat.getLoggedinUser()
-      .then((user: any) => this.theme = `background-color: ${user.metadata.theme};`)
+      .then((user: any) => this.user = user)
       .catch((error) => console.log('error getting details:', { error }));
   }
 

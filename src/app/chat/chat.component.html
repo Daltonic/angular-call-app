@@ -1,25 +1,3 @@
-<div class="chat" [style]="theme">
-  <div class="responsive chat__wrapper">
-    <cometchat-user-list-with-messages></cometchat-user-list-with-messages>
-  </div>
-  <aside class="chat__sidebar">
-    <ul class="chat__icons">
-      <a [routerLink]="['profile']">
-        <img
-          class="chat__icon"
-          title="Profile page"
-          src="/assets/user.svg"
-          alt="Chat Button Icon"
-        />
-      </a>
-      <a (click)="logOut()">
-        <img
-          class="chat__icon"
-          title="Logout"
-          src="/assets/logout.svg"
-          alt="Chat Button Icon"
-        />
-      </a>
-    </ul>
-  </aside>
+<div class="chat">
+  <cometchat-user-list-with-messages></cometchat-user-list-with-messages>
 </div>
