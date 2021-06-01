@@ -2,7 +2,7 @@
 
 .login-page {
   width: 360px;
-  padding: 8% 0 0;
+  padding: 6% 0 0;
   margin: auto;
 }
 .form {
@@ -15,7 +15,8 @@
   text-align: center;
   box-shadow: 0 0 5px 0 rgb(0 0 0 / 5%), 0 5px 5px 0 rgb(0 0 0 / 15%);
 }
-.form input {
+.form input,
+.form select {
   font-family: "Roboto", sans-serif;
   outline: 0;
   background: #f2f2f2;
@@ -30,7 +31,7 @@
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
-  background: #4caf50;
+  background: slateblue;
   width: 100%;
   border: 0;
   padding: 15px;
@@ -43,7 +44,7 @@
 .form button:hover,
 .form button:active,
 .form button:focus {
-  background: #4caf50;
+  background: #6a5acdb5;
 }
 .form .message {
   margin: 15px 0 0;
@@ -51,7 +52,7 @@
   font-size: 12px;
 }
 .form .message a {
-  color: #4caf50;
+  color: slateblue;
   text-decoration: none;
 }
 .form .register-form {
@@ -84,14 +85,6 @@
   color: #4d4d4d;
   font-size: 12px;
 }
-.container .info span a {
-  color: #000000;
-  text-decoration: none;
-}
-.container .info span .fa {
-  color: rgba(0, 255, 64, 0.829);
-}
-
 .header__logo {
   width: 80px;
   margin: 10px 0 30px;
