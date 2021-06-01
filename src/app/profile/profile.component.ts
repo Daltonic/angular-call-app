@@ -25,11 +25,10 @@ export class ProfileComponent implements OnInit {
     if (form.valid) {
       this.loading = true
       const photoURL = form.value.avatar
-      const theme = form.value.theme
 
       this.auth.authState.subscribe((authState) => {
         authState.updateProfile({photoURL})
-        .then(() => this.setProfile(photoURL, theme))
+        .then(() => this.setProfile(photoURL))
         .catch((error) => {
           console.log(error.message)
           alert(error.message)
@@ -39,13 +38,13 @@ export class ProfileComponent implements OnInit {
     }
   }
 
-  private setProfile(avatar: string, theme: string) {
+  private setProfile(avatar: string) {
     const authKey = environment.AUTH_KEY;
     const uid = this.user.uid;
 
     var user = new CometChat.User(uid);
     if (!avatar.includes('base64')) user.setAvatar(avatar);
-    user.setMetadata({avatar, theme});
+    user.setMetadata({avatar});
 
     CometChat.updateUser(user, authKey)
     .then(() => this.route.navigate(['']))

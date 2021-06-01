@@ -39,19 +39,11 @@
           id="avatar"
         />
 
-        <select name="theme" [ngModel]="''" #theme="ngModel" id="theme" required>
-          <option value="" selected>Select Theme</option>
-          <option value="aliceblue">Alice Blue</option>
-          <option value="antiquewhite">Antique White</option>
-          <option value="ghostwhite">Ghost White</option>
-          <option value="mistyrose">Misty Rose</option>
-        </select>
-
         <button
           type="submit"
           [style]="
             !profileForm.valid || loading
-              ? 'background-color: rgb(147 218 165);'
+              ? 'background-color: rgb(147 175 218);'
               : ''
           "
           type="submit"
