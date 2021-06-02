@@ -1,8 +1,8 @@
-# Build One-on-One chat in your Angular app
+# Add voice & video calling to your Angular app
 
-Read the full tutorial here: [**>> Build one-on-one chat in your Angular app**](https://www.cometchat.com/tutorials/#)
+Read the full tutorial here: [**>> Add voice & video calling to your Angular app**](https://www.cometchat.com/tutorials/#)
 
-This example shows How To Build One-on-One chat in your Angular app:
+This example shows How To Add voice & video calling to your Angular app:
 
 ![One-on-One chat App](./screenshots/0.gif)
 <figcaption>One-on-One Angular Chat App</figcaption>
@@ -21,7 +21,7 @@ This demo uses:
 To run the demo follow these steps:
 
 1. [Head to CometChat Pro and create an account](https://app.cometchat.com/signup)
-2. From the [dashboard](https://app.cometchat.com/apps), add a new app called **"one-on-one-chat-app"**
+2. From the [dashboard](https://app.cometchat.com/apps), add a new app called **"angular-call-app"**
 3. Select this newly added app from the list.
 4. From the Quick Start copy the **APP_ID, APP_REGION and AUTH_KEY**. These will be used later.
 5. Navigate to the Users tab, and delete all the default users and groups leaving it clean **(very important)**.
@@ -29,7 +29,7 @@ To run the demo follow these steps:
   ```sh
   npm install -g @angular/cli
   ```
-7. Download the repository [here](https://github.com/Daltonic/angular-chat-app/archive/master.zip) or by running `git clone https://github.com/Daltonic/angular-chat-app.git` and open it in a code editor.
+7. Download the repository [here](https://github.com/Daltonic/angular-call-app/archive/master.zip) or by running `git clone https://github.com/Daltonic/angular-call-app.git` and open it in a code editor.
 8. [Head to Firebase and create a new project](https://console.firebase.google.com)
 9. Open the "environment.ts" and paste codes in the files as seen below.
   ```ts    
@@ -72,7 +72,7 @@ To run the demo follow these steps:
     ng serve --open
 ```
 
-Questions about running the demo? [Open an issue](https://github.com/Daltonic/angular-chat-app/issues). We're here to help ✌️
+Questions about running the demo? [Open an issue](https://github.com/Daltonic/angular-call-app/issues). We're here to help ✌️
 
 
 ## Useful links
