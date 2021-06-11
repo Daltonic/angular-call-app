@@ -65,7 +65,24 @@ To run the demo follow these steps:
   ```
 11. Copy the same settings into the "environment.prod.ts" as well.
 12. Make sure to exclude **app.config.ts** in your gitIgnore file from being exposed online.
-13. Run the following command to install the CometChat SDK.
+
+
+#### Setting Up CometChat UI Kit
+13. Clone this repository `git clone https://github.com/cometchat-pro/cometchat-pro-angular-ui-kit.git`
+14. Copy the cloned repository into your project src folder.
+15. Import the Components in the respective module where the component will be used. `npm i @ctrl/ngx-emoji-mart@1.0.6`
+16. Add this styles to your `angular.json`
+    
+    ```sh
+    "styles": [
+      "node_modules/@ctrl/ngx-emoji-mart/picker.css",
+      "src/cometchat-pro-angular-ui-kit/CometChatWorkspace/projects/angular-chat-ui-kit/src/css/styles.scss"
+    ]
+    ```
+
+17. Wrap all the selectors in a `div` with `class=responsive` as shown in next step
+
+18. Run the following command to install the CometChat SDK.
 
 ```sh
     npm install
